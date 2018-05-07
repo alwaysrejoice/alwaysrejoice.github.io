@@ -20,8 +20,15 @@
     		border-style: inset;
     		border-width: 2px;
     	}
-
-    </style>
+		@media screen and (max-width: 768px){
+			.my-offset-sm-2 {
+				margin-left: 16.66667%;
+			}
+			.margin-sm {
+				margin-top: 10px;
+			}
+		}
+	</style>
   </head>
   <body>
 
@@ -29,69 +36,98 @@
     <a href="#" class="brand no-hover">
         <span class="mif-home mif-3x"></span> HJC
     </a>
+<div class="text-center">
+    <ul class="app-bar-menu place-right">
+        <li><a href="#"><span class="mif-user mif-2x"></span> About</a></li>
+        <li><a href="#"><span class="mif-profile mif-2x"></span> Portfolio</a></li>
+        <li><a href="#"><span class="mif-zoom-in mif-2x"></span> Habit</a></li>
+        <li><a href="#"><span class="mif-contacts-mail mif-2x"></span> Contacts</a></li>
+    </ul>
+</div>
 
-    <ul class="app-bar-menu">
-        <li><a href="#"><span class="mif-chevron-thin-right mif-3x"></span>About</a></li>
-        <li><a href="#"><span class="mif-chevron-thin-right mif-3x"></span>Portfolio</a></li>
-        <li><a href="#"><span class="mif-chevron-thin-right mif-3x"></span>Habit</a></li>
-        <li><a href="#"><span class="mif-chevron-thin-right mif-3x"></span>Contacts</a></li>
-    </ul>
-    <ul class="t-menu open horizontal place-right">
-    	<li><a href="#"><span class="mif-facebook2 icon fg-cyan"></span></a></li>
-    	<li><a href="#"><span class="mif-linkedin icon fg-pink"></span></a></li>
-    	<li><a href="#"><span class="mif-github icon fg-green"></span></a></li>
-    	<li><a href="#"><span class="mif-instagram2 icon fg-red"></span></a></li>
-    	<li><a href="#"><span class="mif-blogger icon fg-orange"></span></a></li>
-    	<li><a href="#"><span class="mif-medium icon mif-2x"></span></a></li>
-    </ul>
 </div>
-<div class="img-container drop-shadow" style="margin-top: 50px;">
-    <img src="download.svg">
+<div style="margin-top: 50px;">
+	<div data-role="carousel" data-height="500" data-effect="fade" data-controls="false"
+		 data-auto-start="true" data-period="5000" data-duration="1000" data-controls-on-mouse="true">
+		<div class="slide" data-cover="personal.png" ></div>
+		<div class="slide" data-cover="IMG_6355.jpg"></div>
+		<div class="slide" data-cover="IMG_0533.jpg"></div>
+	</div>
+    <!--img src="personal.png" style="width:100%;"-->
 </div>
-<div class="container" style="border: 5px solid red;">
+
+
+
+<div class="container-fluid" style="background-color: #f7f7f7;">
 
 <div class="grid">
-	<div class="row">
+	<div style="padding: 40px;"></div>
+	<!--div class="row">
 		<div class="cell">
 			<div class="display4 text-center">Display~</div>
 		</div>
-	</div>
+	</div-->
 	<div class="row">
-		<div class="cell-4">
-			<h1>Metro heading</h1>
-			<p class="text-leader">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		</div>
-		<div class='cell-4'>
-			<p class='indent-letter'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		</div>
-	</div>
-	
-</div>
-</div>
-<hr class="line">
-<h2 class="text-center" style="margin:30px;"> Recent projects:</h2>
+		<div class="cell-lg-4 offset-2 cell-md-4 cell-sm-8">
 
-<div class="container" style="border: 5px solid red;">
+			<p class="indent-letter">Work. I am Jenny, an Associate Research Systems Specialist in the Research and Development division at Educational Testing Service (ETS) in Princeton, NJ. I received a M.S. degree in computer science from Rutgers-Camden in 2017.
+				At ETS, My currently work is to help NEAP machine scoring project. Work duties include testing and developing machine scoring item class, testing and developing the scoring program to generate the final scoring report. My programming skills include Python, C/C++, Java, Javascript, HTML, CSS, XML, SVG.
+			</p>
+		</div>
+		<div class='cell-lg-4 cell-md-4 cell-sm-8 my-offset-sm-2 margin-sm'>
+			<p class='indent-letter'>Before joining ETS, I worked as a software programmer intern at MicroDysis. While working there, I had involved a various projects including web development project, designed and developed a Bluetooth application, designed and developed an Android application. I also worked as a freelance web developer that have helped a Chinese teacher to create a website.
+
+			</p>
+	</div>
+	</div>
+	<div style="padding: 40px;"></div>
+</div>
+</div>
+<!--hr class="line"-->
+
+
+
+<div class="container-fluid" >
+	<div style="padding: 20px;"></div>
+	<h2 class="text-center" style="padding:20px 20px 40px 20px;"> Recent projects:</h2>
 <div class="grid">
  	<div class="row">
-		<div class="cell-4 offset-2">
-			<figure class="imagebox">
-    			<a href="magic_square.html"><img src="jquery.jpg"></a>
-    			<figcaption class="text-center">Magic square using jQuery</figcaption>
-			</figure>
+		<div class="cell-lg-4 offset-2 cell-md-4 cell-sm-8">
+			<div class="img-container">
+    			<img src="jquery.png">
+				<a href="magic_square.html"><div class="image-overlay op-dark">
+					<h2 class="text-light">Magic square using jQuery</h2>
+					<p>Ubi est noster nix? An unveiled form of issue is the awareness.</p>
+				</div></a>
+
+			</div>
 		</div>
-		<div class="cell-4">
-			<figure class="imagebox">
-    			<a href="d3_magic_square.html"><img src="D3.jpg"></a>
-    			<figcaption class="text-center">Magic square using D3js</figcaption>
-			</figure>
+		<div class="cell-lg-4 cell-md-4 cell-sm-8 my-offset-sm-2 margin-sm">
+			<div class="img-container">
+    			<img src="pinkicon.png">
+				<a href="d3_magic_square.html"><div class="image-overlay op-dark">
+					<h2 class="text-light">Magic square using D3js</h2>
+					<p>Ubi est noster nix? An unveiled form of issue is the awareness.</p>
+				</div></a>
+
+			</div>
 		
 		</div>
 	</div>
 </div>
+	<div style="padding: 40px;"></div>
 </div>
-<hr class="line">
 
+<!--hr class="line"-->
+	<div class="container-fluid" style="background-color: #4c4c4c;">
+		<div style="padding: 40px;" class="text-center">
+		<a href="https://www.facebook.com/huijou.chou"><span class="mif-facebook2 icon fg-white mif-2x" style="padding: 10px;"></span></a>
+		<a href="https://www.linkedin.com/in/hui-jou-c-167926a0/"><span class="mif-linkedin icon fg-white mif-2x" style="padding: 10px;"></span></a>
+		<a href="https://github.com/alwaysrejoice"><span class="mif-github icon fg-white mif-2x" style="padding: 10px;"></span></a>
+		<a href="https://www.instagram.com/chouhuijou/"><span class="mif-instagram2 icon fg-white mif-2x" style="padding: 10px;"></span></a>
+		<a href="https://joujounote.blogspot.com/"><span class="mif-blogger icon fg-white mif-2x" style="padding: 10px;"></span></a>
+		<a href="https://medium.com/@alwaysrejoice516"><span class="mif-medium icon fg-white mif-2x" style="padding: 10px;"></span></a></div>
+	</div>
 
 
     <!-- jQuery first, then Metro UI JS -->
